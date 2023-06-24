@@ -1724,7 +1724,7 @@ h4.agile-title, h1.agile-title, h2.agile-title {
 }
 @media (width < 300px) {
     .row.mt-lg-5 > div {
-        width: 16em !important;
+        width: 16.5em !important;
     }
 }
 /*-- //responsive design --*/

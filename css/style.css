@@ -633,7 +633,7 @@ li > a:only-child:after { content: ''; }
   
 	nav ul li ul li .toggle,
 	nav ul ul a,
-  nav ul ul ul a{
+    nav ul ul ul a{
 		padding:14px 20px;	
 		color:#FFF;
 		font-size:17px; 
@@ -682,6 +682,10 @@ li > a:only-child:after { content: ''; }
 		padding-bottom: 0 !important;
 		padding-top: 8px !important;
 	}
+
+    .row.mt-lg-5 > div {
+        width: 32em !important;
+    }
 }
 
 @media all and (max-width : 330px) {
@@ -985,19 +989,7 @@ ul.team-icons.new-inf li {
     font-size: 15px;
 }
 
-.team-gd {
-    padding: 3em 2em;
-    background: rgba(220, 223, 225, 0.7);
-    transition: 2s all;
-    -webkit-transition: 2s all;
-    -moz-transition: 2s all;
-    -ms-transition: 2s all;
-    -o-transition: 2s all;
-    box-shadow: 7px 7px 10px 0 rgba(76, 110, 245, .1);
-    border: transparent;
-}
-
-.team-gd img {
+.team-img img {
     box-shadow: 0 20px 40px -10px rgba(0, 0, 0, .3);
     border: .13rem solid var(--main-redish-color);
 }
@@ -1492,31 +1484,36 @@ p.p_sub {
 @media(max-width:991px) {
 	p.p_sub {
     width: 18%;
-} 
-.counter {
-    padding: 25px;
+    }
+ 
+    .counter {
+        padding: 25px;
+    }
+    .counter h3 {
+        letter-spacing: 0px;
+    }
+    img.group.list-group-image {
+        width: 100%;
+    }
+    span.decription {
+        width: 35%;
+    }
+    .adress-info h6 {
+        font-size: 1em;
+        letter-spacing: 1px;
+    }
+    form#contactform1 {
+        margin-top: 1em;
+        padding: 1em 0 0 0;
+    }
+    h3.head_style {
+        width: 60%;
+    }
+    .row.mt-lg-5 > div {
+        width: 42em !important;
+    }
 }
-.counter h3 {
-    letter-spacing: 0px;
-}
-img.group.list-group-image {
-    width: 100%;
-}
-span.decription {
-    width: 35%;
-}
-.adress-info h6 {
-    font-size: 1em;
-    letter-spacing: 1px;
-}
-form#contactform1 {
-    margin-top: 1em;
-    padding: 1em 0 0 0;
-}
-h3.head_style {
-    width: 60%;
-}
-}
+
 @media(max-width:800px) {
     h3.heading {
     font-size: 2.8em;
@@ -1526,7 +1523,9 @@ header {
 }
 }
 @media(max-width:768px) {
-    
+    .row.mt-lg-5 > div {
+        width: 31.5em !important;
+    }
 }
 @media(max-width:736px) {
 	p.p_sub {
@@ -1587,38 +1586,41 @@ h4.agile-title, h1.agile-title, h2.agile-title {
 @media(max-width:568px) {
 	h3.heading {
     font-size: 2.5em;
-} 
-.text_side {
-    text-align: center;
-}
-.adress-info h6 {
-    text-align: center;
-}
-.adress-info a, .adress-info p {
-    text-align: center;
-}
-.text_side1 {
-    text-align: center !important;
-}
-.pricing-grid.card {
-    padding: 0px 0;
-}
-.adress-info1 {
-    margin: 2em 0;
-}
-h3.head_style {
-    font-size: 1.8em;
-}
-h4.agile-title, h1.agile-title, h2.agile-title {
-    letter-spacing: 5px;
-    font-size: 2.5em;
-}
-.about-lay-left h6 {
-    margin-top: 1em;
-}
-.contact-page button.btn.btn-default {
-    width: 22%;
-}
+    } 
+    .text_side {
+        text-align: center;
+    }
+    .adress-info h6 {
+        text-align: center;
+    }
+    .adress-info a, .adress-info p {
+        text-align: center;
+    }
+    .text_side1 {
+        text-align: center !important;
+    }
+    .pricing-grid.card {
+        padding: 0px 0;
+    }
+    .adress-info1 {
+        margin: 2em 0;
+    }
+    h3.head_style {
+        font-size: 1.8em;
+    }
+    h4.agile-title, h1.agile-title, h2.agile-title {
+        letter-spacing: 5px;
+        font-size: 2.5em;
+    }
+    .about-lay-left h6 {
+        margin-top: 1em;
+    }
+    .contact-page button.btn.btn-default {
+        width: 22%;
+    }
+    .row.mt-lg-5 > div {
+        width: 28em !important;
+    }
 }
 @media(max-width:480px) {
 .contact-page button.btn.btn-default {
@@ -1716,3 +1718,32 @@ h4.agile-title, h1.agile-title, h2.agile-title {
 }
 
 /*-- //responsive design --*/
+
+/* added styling for team display */
+.row.mt-lg-5 {
+    /* border: 1px solid var(--main-redish-color); */
+    display: flex;
+    justify-content: space-around;
+}
+
+.row.mt-lg-5 > div {
+    width: 530px;
+    text-align: center;
+    padding: 2em 2em;
+    margin: 1em 0em;
+    background: rgba(220, 223, 225, .9);
+    transition: 2s all;
+    -webkit-transition: 2s all;
+    -moz-transition: 2s all;
+    -ms-transition: 2s all;
+    -o-transition: 2s all;
+    box-shadow: 7px 7px 10px 0 rgba(7, 11, 5, .2);
+    border: transparent;
+    
+}
+
+@media (width < 1200px) {
+    .row.mt-lg-5 > div {
+        width: 28em ;
+    }
+}

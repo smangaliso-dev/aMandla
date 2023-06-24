@@ -1648,7 +1648,7 @@ h4.agile-title, h1.agile-title, h2.agile-title {
         font-size: 15px;
     }
     .row.mt-lg-5 > div {
-        width: 22.5em !important;
+        width: 23em !important;
     }
 }
 @media(max-width:414px) {

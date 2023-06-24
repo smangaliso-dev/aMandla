@@ -1721,12 +1721,22 @@ h4.agile-title, h1.agile-title, h2.agile-title {
 .contact-page button.btn.btn-default {
     width: 40%;
 }
+.row.mt-lg-5 > div {
+    width: 20em !important;
 }
-@media (width < 300px) {
+}
+@media (width <= 300px) {
     .row.mt-lg-5 > div {
-        width: 17em !important;
+        width: 18em !important;
     }
 }
+
+@media (width <= 280px) {
+    .row.mt-lg-5 > div {
+        width: 16em !important;
+    }
+}
+
 /*-- //responsive design --*/
 
 /* added styling for team display */

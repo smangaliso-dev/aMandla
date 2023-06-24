@@ -1722,7 +1722,11 @@ h4.agile-title, h1.agile-title, h2.agile-title {
     width: 40%;
 }
 }
-
+@media (width < 300px) {
+    .row.mt-lg-5 > div {
+        width: 15.5em !important;
+    }
+}
 /*-- //responsive design --*/
 
 /* added styling for team display */

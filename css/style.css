@@ -1696,7 +1696,7 @@ h4.agile-title, h1.agile-title, h2.agile-title {
         padding-right: 0em;
     }
     .row.mt-lg-5 > div {
-        width: 21em !important;
+        width: 20em !important;
     }
 }
 @media(max-width:375px) {
@@ -1722,7 +1722,7 @@ h4.agile-title, h1.agile-title, h2.agile-title {
     width: 40%;
 }
 .row.mt-lg-5 > div {
-    width: 20em !important;
+    width: 19em !important;
 }
 }
 @media (width <= 300px) {

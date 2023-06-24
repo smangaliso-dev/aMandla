@@ -1651,23 +1651,26 @@ p.copy-right-grids {
 @media(max-width:414px) {
 	p.p_sub {
     width: 35%;
-}
-.counter {
-    padding: 20px;
-}
-h3.heading {
-    font-size: 2.3em;
-}
-.contact-page button.btn.btn-default {
-    width: 30%;
-}
-h3.head_style {
-    letter-spacing: 5px;
-}
-h4.agile-title, h1.agile-title, h2.agile-title {
-    letter-spacing: 1px;
-    font-size: 2.3em;
-}
+    }
+    .counter {
+        padding: 20px;
+    }
+    h3.heading {
+        font-size: 2.3em;
+    }
+    .contact-page button.btn.btn-default {
+        width: 30%;
+    }
+    h3.head_style {
+        letter-spacing: 5px;
+    }
+    h4.agile-title, h1.agile-title, h2.agile-title {
+        letter-spacing: 1px;
+        font-size: 2.3em;
+    }
+    .row.mt-lg-5 > div {
+        width: 22.5em !important;
+    }
 }
 @media(max-width:384px) {
 	.contact-page button.btn.btn-default {
